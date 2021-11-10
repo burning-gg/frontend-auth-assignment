@@ -1,0 +1,16 @@
+.socialItem {
+  display: flex;
+  margin: 20px;
+}
+
+.socialItem__link {
+  margin: auto 0;
+}
+
+.socialItem__body {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  font-size: var(--fontMed);
+  font-weight: 600;
+}

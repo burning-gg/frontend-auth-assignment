@@ -1,0 +1,27 @@
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--light);
+}
+
+.profile__body {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 40px !important;
+  width: 100%;
+}
+
+.profile__city {
+  display: flex;
+  margin: 20px;
+}
+
+.city__title {
+  margin: 20px;
+  font-size: var(--fontMed);
+  font-weight: 600;
+}

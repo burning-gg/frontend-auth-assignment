@@ -1,0 +1,15 @@
+.homepage {
+  display: flex;
+  justify-content: center;
+  background-color: var(--light) !important;
+}
+
+.homepage__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px !important;
+  width: var(--maxWidth);
+  min-height: calc(100vh - 220px);
+}

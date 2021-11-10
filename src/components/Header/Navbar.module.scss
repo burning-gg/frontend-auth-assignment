@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 0 0 3px 0 !important;
+}
+
+.navbar_mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar__link {
+  color: var(--white) !important;
+  font-size: var(--fontSmall);
+  font-weight: 600;
+}
+
+.navbar__link_mobile {
+  font-size: var(--fontMed);
+  font-weight: 600;
+}
