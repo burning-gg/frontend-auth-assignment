@@ -10,7 +10,7 @@ Profile viewer with auth with React, Ant Design, Redux, Redux-thunk, React-route
 
 [![screen-3.jpg](https://i.postimg.cc/wvCPnxPj/screen-3.jpg)](https://postimg.cc/DJcBXhn9)
 
-[![screen-4.jpg](https://i.postimg.cc/SRc54FF7/screen-4.jpg)](https://postimg.cc/0K2ZG4Nb)
+[![screen-5.jpg](https://i.postimg.cc/k4BJCycX/screen-5.jpg)](https://postimg.cc/62xJLngD)
 
 # Getting Started with Create React App
 

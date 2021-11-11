@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import styles from './Navbar.module.scss';
 
 import { logout } from '../../actions/authAction';
+import { clearUser } from '../../actions/userAction';
 
 const Navbar = ({ isMobile }) => {
   const auth = useSelector((state) => state.authReducer);
@@ -16,6 +17,7 @@ const Navbar = ({ isMobile }) => {
   const onLogout = (e) => {
     e.preventDefault();
     dispatch(logout());
+    dispatch(clearUser());
     navigate('/');
   };
 

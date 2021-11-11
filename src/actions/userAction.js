@@ -2,7 +2,8 @@ import axios from 'axios'
 import { setAlert } from './alertAction'
 import {
   USER_LOADED,
-  USER_LOAD_ERROR
+  USER_LOAD_ERROR,
+  USER_CLEAR
 } from './types'
 import setAuthToken from '../utils/setAuthToken'
 import parseJwt from '../utils/parseAuthToken'
@@ -32,4 +33,10 @@ export const loadUser = () => async dispatch => {
 
     dispatch(setAlert('Сессия потеряна. Авторизуйтесь заново', 'error'))
   }
+}
+
+export const clearUser = () => dispatch => {
+  dispatch({
+    type: USER_CLEAR
+  })
 }

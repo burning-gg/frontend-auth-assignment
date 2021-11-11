@@ -1,6 +1,7 @@
 import {
   USER_LOADED,
-  USER_LOAD_ERROR
+  USER_LOAD_ERROR,
+  USER_CLEAR
 } from '../actions/types'
 
 const initialState = {
@@ -23,6 +24,12 @@ export default function userReducer(state = initialState, action) {
       return {
         ...state,
         error: payload,
+        loading: false
+      }
+    case USER_CLEAR:
+      return {
+        ...state,
+        user: null,
         loading: false
       }
     default:
