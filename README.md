@@ -1,3 +1,17 @@
+# Frontend auth
+
+Profile viewer with auth with React, Redux, Redux-thunk, React-router-dom v6
+
+## Screenshots
+
+[![screen-1.jpg](https://i.postimg.cc/m2vxKwvS/screen-1.jpg)](https://postimg.cc/nCGwDvcs)
+
+[![screen-2.jpg](https://i.postimg.cc/sDYddS3d/screen-2.jpg)](https://postimg.cc/qzvZ2Ntj)
+
+[![screen-3.jpg](https://i.postimg.cc/wvCPnxPj/screen-3.jpg)](https://postimg.cc/DJcBXhn9)
+
+[![screen-4.jpg](https://i.postimg.cc/SRc54FF7/screen-4.jpg)](https://postimg.cc/0K2ZG4Nb)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
