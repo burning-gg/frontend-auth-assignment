@@ -50,9 +50,9 @@ const App = () => {
             <Notification />
             <Routes>
               <Route path='/' element={<Homepage />} />
-              <Route path='login' element={<Login />} />
+              <Route path='/login' element={<Login />} />
               <Route
-                path='profile'
+                path='/profile'
                 element={
                   <RequireAuth>
                     <Profile />
