@@ -1,6 +1,6 @@
 # Frontend auth
 
-Profile viewer with auth with React, Redux, Redux-thunk, React-router-dom v6
+Profile viewer with auth with React, Ant Design, Redux, Redux-thunk, React-router-dom v6
 
 ## Screenshots
 
