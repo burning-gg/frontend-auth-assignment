@@ -5,13 +5,18 @@ import { Typography } from 'antd';
 import { Container } from '../../components/Container';
 import { LanguageItem } from '../../components/LanguageItem';
 import { SocialItem } from '../../components/SocialItem';
+import { Loader } from '../../components/Loader';
 
 import styles from './Profile.module.scss';
 
 const { Title } = Typography;
 
 const Profile = () => {
-  const profile = useSelector((state) => state.userReducer.user.data);
+  const profile = useSelector((state) => state.userReducer.user);
+
+  if (profile === null || profile === undefined) {
+    return <Loader />;
+  }
 
   return (
     <div className={styles.profile}>

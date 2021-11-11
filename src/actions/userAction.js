@@ -17,11 +17,11 @@ export const loadUser = () => async dispatch => {
 
     const userId = decodeJwt.data.id
 
-    const res = await axios.get(`/user-info/${userId}`)
+    const res = await axios.get(`https://mysterious-reef-29460.herokuapp.com/api/v1/user-info/${userId}`)
 
     dispatch({
       type: USER_LOADED,
-      payload: res.data
+      payload: res.data.data
     })
 
     dispatch(setAlert('Вы успешно авторизовались', 'success'))

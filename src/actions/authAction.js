@@ -32,7 +32,7 @@ export const login = (email, password) => async dispatch => {
   const body = JSON.stringify({ email, password })
 
   try {
-    const res = await axios.post('/validate', body, config)
+    const res = await axios.post('https://mysterious-reef-29460.herokuapp.com/api/v1/validate', body, config)
 
     if (res.data.status === 'err') {
       dispatch({
@@ -48,14 +48,16 @@ export const login = (email, password) => async dispatch => {
 
     res.data.token = newToken
 
+    dispatch(loadUser())
+
     dispatch({
       type: LOGIN_SUCCESS,
       payload: res.data
     })
 
-    dispatch(loadUser())
+
   } catch (err) {
-    const error = err.response.data.message
+    const error = 'Ошибка авторизации'
 
     dispatch({
       type: LOGIN_FAIL,
